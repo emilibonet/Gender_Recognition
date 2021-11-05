@@ -24,8 +24,8 @@ from DSFD.data import BaseTransform, TestBaseTransform
 from DSFD.data import WIDERFace_CLASSES as labelmap
 from DSFD.data import (WIDERFace_ROOT, WIDERFaceAnnotationTransform,
                   WIDERFaceDetection)
-from face_ssd import build_ssd
-from widerface_val import bbox_vote
+from DSFD.face_ssd import build_ssd
+from DSFD.widerface_val import bbox_vote
 
 
 def write_to_txt(f, det , event , im_name):
