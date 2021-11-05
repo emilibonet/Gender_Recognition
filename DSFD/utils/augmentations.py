@@ -11,7 +11,7 @@ import torch
 from numpy import random
 from torchvision import transforms
 
-from data.config import widerface_640
+from DSFD.data.config import widerface_640
 
 cfg = widerface_640
 das = cfg['data_anchor_sampling']
