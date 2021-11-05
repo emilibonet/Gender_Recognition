@@ -4,11 +4,9 @@ import numpy as np
 import cv2
 import torch
 
-import sys
-sys.path.insert(1, './../DSFD/')
-import face_ssd as mod
-import demo as pred
-from data import widerface_640, WIDERFace_ROOT, TestBaseTransform
+import DSFD.face_ssd as mod
+import DSFD.demo as pred
+from DSFD.data import widerface_640, WIDERFace_ROOT, TestBaseTransform
 cfg = widerface_640
 
 
