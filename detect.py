@@ -88,14 +88,13 @@ if __name__ == "__main__":
     print("CUDA available:", args.cuda)
     print("Number of parameters in the network:", sum(p.numel() for p in net.parameters() if p.requires_grad))
     image_names = [name[:-4] for name in os.listdir(img_dir)]
-    print(image_names)
-    assert(False)
-    for img_name in image_names:
+    for i,img_name in enumerate(image_names):
         args.img_root = f'{img_dir}{img_name}.jpg'
         save_path = f'{ann_dir}{img_name}.jpg'
         img = cv2.imread(args.img_root, cv2.IMREAD_COLOR)
         # gt_path = gt_dir+img_name+".csv"
         # gt = utils.read_annotations(gt_path)
         det = detect(net, img, args)
-        print(det)
+        print(f"Detection results ({i}):", det)
+        print("-"*30)
     
