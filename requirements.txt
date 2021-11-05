@@ -1,0 +1,5 @@
+scikit-learn
+opencv-python
+matplotlib
+torch
+torchvision==0.2.1
