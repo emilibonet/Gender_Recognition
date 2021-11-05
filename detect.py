@@ -87,7 +87,8 @@ def detect(net, img, args):
 if __name__ == "__main__":
     args = arguments()
     net = load_model(args.cuda, args.trained_model)
-    print(sum(p.numel() for p in net.parameters() if p.requires_grad))
+    print("CUDA available:", args.cuda)
+    print("Number of parameters in the network:", sum(p.numel() for p in net.parameters() if p.requires_grad))
     assert(False)
     image_names = [name[:-4] for name in os.listdir(img_dir)]
     for img_name in image_names:
