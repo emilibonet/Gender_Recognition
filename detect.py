@@ -87,8 +87,9 @@ if __name__ == "__main__":
     net = load_model(args.cuda, args.trained_model)
     print("CUDA available:", args.cuda)
     print("Number of parameters in the network:", sum(p.numel() for p in net.parameters() if p.requires_grad))
-    assert(False)
     image_names = [name[:-4] for name in os.listdir(img_dir)]
+    print(image_names)
+    assert(False)
     for img_name in image_names:
         args.img_root = f'{img_dir}{img_name}.jpg'
         save_path = f'{ann_dir}{img_name}.jpg'
