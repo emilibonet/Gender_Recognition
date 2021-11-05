@@ -26,13 +26,13 @@ def arguments():
                         help='Dir to save results')
     parser.add_argument('--visual_threshold', default=0.1, type=float,
                         help='Final confidence threshold')
-    parser.add_argument('--cuda', default=False, type=bool,
+    parser.add_argument('--cuda', default=torch.cuda.is_available(), type=bool,
                         help='Use cuda to train model')
     parser.add_argument('--img_root', default=None, help='Location of test images directory')
     parser.add_argument('--widerface_root', default=WIDERFace_ROOT, help='Location of WIDERFACE root directory')
     args = parser.parse_args()
 
-    if args.cuda and torch.cuda.is_available():
+    if args.cuda:
         torch.set_default_tensor_type('torch.cuda.FloatTensor')
     else:
         torch.set_default_tensor_type('torch.FloatTensor')
@@ -87,6 +87,7 @@ def detect(net, img, args):
 if __name__ == "__main__":
     args = arguments()
     net = load_model(args.cuda, args.trained_model)
+    print(sum(p.numel() for p in net.parameters() if p.requires_grad))
     assert(False)
     image_names = [name[:-4] for name in os.listdir(img_dir)]
     for img_name in image_names:
