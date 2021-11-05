@@ -10,15 +10,13 @@ import torchvision
 from torch.autograd import Variable
 
 
-import sys
-sys.path.insert(1, '/home/emili/Documents/Universitat/Q7/I2R/gender_recognition/DSFD/')
-from data import widerface_640
+from DSFD.data import config, widerface, TestBaseTransform
 from layers import *
 from model.detnet_backbone import detnet59
 
 #import pretrainedmodels
 
-cfg = widerface_640
+cfg = config.widerface_640
 
 mo = cfg['max_out']
 fpn = cfg['feature_pyramid_network']
