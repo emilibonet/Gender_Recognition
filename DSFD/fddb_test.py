@@ -24,9 +24,9 @@ from DSFD.data import BaseTransform, TestBaseTransform
 from DSFD.data import WIDERFace_CLASSES as labelmap
 from DSFD.data import (WIDERFace_ROOT, WIDERFaceAnnotationTransform,
                   WIDERFaceDetection)
-from face_ssd import build_ssd
-from utils import draw_toolbox
-from widerface_val import (bbox_vote, detect_face, multi_scale_test,
+from DSFD.face_ssd import build_ssd
+from DSFD.utils import draw_toolbox
+from DSFD.widerface_val import (bbox_vote, detect_face, multi_scale_test,
                            multi_scale_test_pyramid)
 
 #plt.switch_backend('agg')

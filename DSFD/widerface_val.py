@@ -23,7 +23,7 @@ from DSFD.data import BaseTransform, TestBaseTransform
 from DSFD.data import WIDERFace_CLASSES as labelmap
 from DSFD.data import (WIDERFace_ROOT, WIDERFaceAnnotationTransform,
                   WIDERFaceDetection)
-from face_ssd import build_ssd
+from DSFD.face_ssd import build_ssd
 
 def detect_face(image, shrink):
     x = image
