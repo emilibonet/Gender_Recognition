@@ -4,6 +4,7 @@ import numpy as np
 import cv2
 import torch
 
+import utils
 import DSFD.face_ssd as mod
 import DSFD.demo as pred
 from DSFD.data import config, widerface, TestBaseTransform
@@ -91,8 +92,7 @@ if __name__ == "__main__":
     for i,img_name in enumerate(image_names):
         args.img_root = f'{img_dir}{img_name}.jpg'
         save_path = f'{ann_dir}{img_name}.jpg'
-        img = cv2.imread(args.img_root, cv2.IMREAD_COLOR)
-        print(args.img_root)
+        img = utils.read_image(args.img_root)
         # gt_path = gt_dir+img_name+".csv"
         # gt = utils.read_annotations(gt_path)
         det = detect(net, img, args)
