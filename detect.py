@@ -6,8 +6,8 @@ import torch
 
 import DSFD.face_ssd as mod
 import DSFD.demo as pred
-from DSFD.data import widerface_640, WIDERFace_ROOT, TestBaseTransform
-cfg = widerface_640
+from DSFD.data import config, widerface, TestBaseTransform
+cfg = config.widerface_640
 
 
 img_dir = "data/dataset_train_samples/"
@@ -27,7 +27,7 @@ def arguments():
     parser.add_argument('--cuda', default=torch.cuda.is_available(), type=bool,
                         help='Use cuda to train model')
     parser.add_argument('--img_root', default=None, help='Location of test images directory')
-    parser.add_argument('--widerface_root', default=WIDERFace_ROOT, help='Location of WIDERFACE root directory')
+    parser.add_argument('--widerface_root', default=widerface.WIDERFace_ROOT, help='Location of WIDERFACE root directory')
     args = parser.parse_args()
 
     if args.cuda:
