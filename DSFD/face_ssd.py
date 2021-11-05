@@ -11,8 +11,8 @@ from torch.autograd import Variable
 
 
 from DSFD.data import config, widerface, TestBaseTransform
-from layers import *
-from model.detnet_backbone import detnet59
+from DSFD.layers import *
+from DSFD.model.detnet_backbone import detnet59
 
 #import pretrainedmodels
 
