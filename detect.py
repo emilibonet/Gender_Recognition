@@ -93,6 +93,8 @@ if __name__ == "__main__":
         args.img_root = f'{img_dir}{img_name}.jpg'
         save_path = f'{ann_dir}{img_name}.jpg'
         img = utils.read_image(args.img_root)
+        if img is None:
+            continue
         # gt_path = gt_dir+img_name+".csv"
         # gt = utils.read_annotations(gt_path)
         det = detect(net, img, args)
