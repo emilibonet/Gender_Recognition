@@ -3,6 +3,7 @@ import argparse
 import numpy as np
 import cv2
 import torch
+from tqdm import tqdm
 
 import utils
 import DSFD.face_ssd as mod
@@ -89,7 +90,7 @@ if __name__ == "__main__":
     print("CUDA available:", args.cuda)
     print("Number of parameters in the network:", sum(p.numel() for p in net.parameters() if p.requires_grad))
     image_names = [name[:-4] for name in os.listdir(img_dir)]
-    for i,img_name in enumerate(image_names):
+    for i,img_name in tqdm(enumerate(image_names)):
         args.img_root = f'{img_dir}{img_name}.jpg'
         save_path = f'{ann_dir}{img_name}.jpg'
         img = utils.read_image(args.img_root)
