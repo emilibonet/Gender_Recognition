@@ -33,15 +33,3 @@ if __name__ == "__main__":
         print(i, annotations)
         utils.plot_annotation(img_path, save_path, annotations)
         
-
-"""
-import cv2
-import face_detection
-print(face_detection.available_detectors)
-detector = face_detection.build_detector(
-  "DSFDDetector", confidence_threshold=.5, nms_iou_threshold=.3)
-# BGR to RGB
-im = cv2.imread("path_to_im.jpg")[:, :, ::-1]
-
-detections = detector.detect(im)
-"""
