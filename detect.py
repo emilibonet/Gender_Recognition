@@ -29,5 +29,6 @@ if __name__ == "__main__":
         img = cv2.imread(img_path)[:, :, ::-1]
         detections = detector.detect(img)
         annotations = dets2df(detections)
+        annotations.to_csv(f'{pred_dir}{img_name}.csv', index=False)
         utils.plot_annotation(img_path, save_path, annotations)
         
