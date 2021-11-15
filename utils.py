@@ -22,10 +22,10 @@ def read_image(path):
         return None
 
 
-def plot_annotation(img_path, save_path, annotations):
+def plot_annotation(img_path, annotations, save_path=None):
     if type(annotations) not in [str, pd.DataFrame]:
         print("Please provide either a path to a csv containing the annotations or a pandas dataframe.")
-        return 1
+        return None
     if type(annotations) is str:
         ann = read_annotations(annotations)
     else:
@@ -33,13 +33,14 @@ def plot_annotation(img_path, save_path, annotations):
     img = read_image(img_path)
     gender2color = {"man":(255, 0, 0), "woman":(0, 0, 255), "undef":(0, 255, 0)}
     if img is None or ann is None:
-        return 1
+        return None
     for i in range(len(ann)):
         start_point = (ann["bbox"][i][0], ann["bbox"][i][1])
         end_point = (ann["bbox"][i][2], ann["bbox"][i][3])
         # draw the rectangle
         cv2.rectangle(img, start_point, end_point, gender2color[ann["gender"][i]], thickness=3, lineType=cv2.LINE_8) 
         cv2.putText(img, ann["gender"][i], (start_point[0], start_point[1]-5), color=gender2color[ann["gender"][i]], fontFace = cv2.FONT_HERSHEY_COMPLEX, fontScale = .35)
-        # display the output
-        cv2.imwrite(save_path, img)
-    return 0
+        
+        if save_path is not None:
+            cv2.imwrite(save_path, img)
+    return img
