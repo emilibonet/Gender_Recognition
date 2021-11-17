@@ -5,7 +5,7 @@ from os import listdir
 
 import utils
 
-# def plot_annotation(img_path, gt_path, save_path):
+# def draw_annotation(img_path, gt_path, save_path):
 #     gender2color = {"man":(255, 0, 0), "woman":(0, 0, 255)}
 #     try:
 #         raw_img = cv2.imread(img_path)
@@ -36,4 +36,4 @@ if __name__ == "__main__":
         img_path = f'{img_dir}{img_name}.jpg'
         gt_path = gt_dir+img_name+".csv"
         save_path = f"{ann_dir}{img_name}.jpg"
-        utils.plot_annotation(img_path, gt_path, save_path)
+        utils.draw_annotation(img_path, gt_path, save_path)

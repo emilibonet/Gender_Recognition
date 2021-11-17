@@ -35,5 +35,5 @@ if __name__ == "__main__":
         img = cv2.imread(img_path)[:, :, ::-1]
         annotations = detect(img, detector)
         annotations.to_csv(f'{pred_dir}{img_name}.csv', index=False)
-        utils.plot_annotation(img_path, annotations, save_path)
+        utils.draw_annotation(img_path, annotations, save_path)
         

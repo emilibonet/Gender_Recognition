@@ -1,17 +1,29 @@
-import pandas as pd
-from pandas.core.frame import DataFrame
 import cv2
+import pandas as pd
+import xml.etree.ElementTree as ET
 from ast import literal_eval  # CSV bbox as list
 
 # Find project's root directory
 import os 
 root = os.getcwd().split("Gender_Recognition")[0]+"Gender_Recognition/"
 
+
+def parse_xml(path_to_xml):
+    root = ET.parse(path_to_xml).getroot()
+    rows = []
+    for object in root.findall("object"):
+        gender = object.find("name").text
+        xmin, ymin = int(object.find("bndbox").find("xmin").text), int(object.find("bndbox").find("ymin").text)
+        xmax, ymax = int(object.find("bndbox").find("xmax").text), int(object.find("bndbox").find("ymax").text)
+        rows.append({"gender":gender, "bbox":[xmin, ymin, xmax, ymax]})
+    return rows
+
+
 def read_annotations(path):
     try:
         return pd.read_csv(path, converters={"bbox": literal_eval})
     except:
-        if path.split("/")[-1][0] != ".":  # if false: hidden file; ignore
+        if path.split("/")[-1][0] != ".":  # if false -> hidden file; ignore
             print("File not found:", path)
         return None   
     
@@ -25,7 +37,7 @@ def read_image(path):
         return None
 
 
-def plot_annotation(img_path, annotations, save_path=None):
+def draw_annotation(img_path, annotations, save_path=None):
     if type(annotations) not in [str, pd.DataFrame]:
         print("Please provide either a path to a csv containing the annotations or a pandas dataframe.")
         return None
