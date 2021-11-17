@@ -7,9 +7,9 @@ import utils
 import cv2
 import face_detection as fd
 
-img_dir = "data/dataset_train_samples/"
-ann_dir = "data/annotated_train_samples/"
-pred_dir = "data/predicted_train_samples/"
+img_dir = utils.root + "data/images/raw/"
+ann_img_dir = utils.root + "data/images/detections/"
+pred_dir = utils.root + "data/annotations/predictions/"
 
 
 def dets2df(detections):
@@ -31,7 +31,7 @@ if __name__ == "__main__":
     print(f"Applying detection to images from directory {img_dir}")
     image_names = [name[:-4] for name in os.listdir(img_dir) if name[0] != "."]
     for img_name in tqdm(image_names):
-        img_path, save_path = f'{img_dir}{img_name}.jpg', f'{ann_dir}{img_name}.jpg'
+        img_path, save_path = f'{img_dir}{img_name}.jpg', f'{ann_img_dir}{img_name}.jpg'
         img = cv2.imread(img_path)[:, :, ::-1]
         annotations = detect(img, detector)
         annotations.to_csv(f'{pred_dir}{img_name}.csv', index=False)

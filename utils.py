@@ -3,6 +3,9 @@ from pandas.core.frame import DataFrame
 import cv2
 from ast import literal_eval  # CSV bbox as list
 
+# Find project's root directory
+import os 
+root = os.getcwd().split("Gender_Recognition")[0]+"Gender_Recognition/"
 
 def read_annotations(path):
     try:

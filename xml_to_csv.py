@@ -3,6 +3,7 @@ import xml.etree.ElementTree as ET
 import pandas as pd
 from tqdm import tqdm
 
+import utils
 
 def parse_xml(path_to_xml):
     root = ET.parse(path_to_xml).getroot()
@@ -16,11 +17,11 @@ def parse_xml(path_to_xml):
 
 
 if __name__ == "__main__":
-    path = "./data/ground_truth_dataset_train_samples/"
+    gt_dir = utils.root + "data/annotations/ground_truth/xmls/"
 
     print("Starting conversion...")
-    for xml_file in tqdm(listdir(path+"xml_format/")):
-        rows = parse_xml(path+"xml_format/"+xml_file)
+    for xml_file in tqdm(listdir(gt_dir+"xmls/")):
+        rows = parse_xml(gt_dir+"xmls/"+xml_file)
         df = pd.DataFrame(rows)
-        df.to_csv(f'{path}{xml_file[:-4]}.csv', index=False)
+        df.to_csv(f'{gt_dir}{xml_file[:-4]}.csv', index=False)
     print("Conversion ended successfully.")
