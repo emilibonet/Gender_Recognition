@@ -53,7 +53,7 @@ def draw_annotation(img_path, annotations, save_path=None):
         start_point = (ann["bbox"][i][0], ann["bbox"][i][1])
         end_point = (ann["bbox"][i][2], ann["bbox"][i][3])
         # draw the rectangle
-        cv2.rectangle(img, start_point, end_point, gender2color[ann["gender"][i]], thickness=3, lineType=cv2.LINE_8) 
+        cv2.rectangle(img, start_point, end_point, gender2color[ann["gender"][i]], thickness=1, lineType=cv2.LINE_8) 
         cv2.putText(img, ann["gender"][i], (start_point[0], start_point[1]-5), color=gender2color[ann["gender"][i]], fontFace = cv2.FONT_HERSHEY_COMPLEX, fontScale = .35)
         
         if save_path is not None:
