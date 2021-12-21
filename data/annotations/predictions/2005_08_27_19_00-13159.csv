@@ -1,2 +1,2 @@
-bbox,gender
-"[173, 54, 273, 176]",undef
+bbox,bbox_conf,gender
+"[173, 54, 273, 176]",0.9997959733009338,undef

@@ -32,4 +32,3 @@ os.system(
 )
 
 os.chdir(f"{utils.root}")
-

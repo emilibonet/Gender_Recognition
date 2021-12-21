@@ -15,8 +15,9 @@ pred_dir = utils.root + "data/annotations/predictions/"
 
 
 def dets2df(detections):
-    return pd.DataFrame([{"bbox":[int(round(xmin)), int(round(ymin)), int(round(xmax)), int(round(ymax))],
-                          "gender":"undef", "bbox_conf": conf} for xmin, ymin, xmax, ymax, conf in detections])
+    return pd.DataFrame([{"gender":"undef",
+                          "bbox":[int(round(xmin)), int(round(ymin)), int(round(xmax)), int(round(ymax))],
+                          "bbox_conf": conf} for xmin, ymin, xmax, ymax, conf in detections])
         
 
 def detect(img, detector=None):
@@ -33,31 +34,6 @@ def crop_faces(img, ann):
             faces.append(face)
     return faces
 
-
-def IoU(bbox_a, bbox_b):
-    # coordinates of the intersection rectangle
-    x_min, y_min = max(bbox_a[0], bbox_b[0]), max(bbox_a[1], bbox_b[1])
-    x_max, y_max = min(bbox_a[2], bbox_b[2]), min(bbox_a[3], bbox_b[3])
-
-    # areas of bboxes a, b and intersection
-    area_a = (bbox_a[2] - bbox_a[0]) * (bbox_a[3] - bbox_a[1])
-    area_b = (bbox_b[2] - bbox_b[0]) * (bbox_b[3] - bbox_b[1])
-    area_inter = (x_max - x_min) * (y_max - y_min)
-
-    return area_inter / float(area_a + area_b - area_inter)
-
-def pred2gt_pairup(pred_df, gt_df, iou_thrs=.5):
-    pred_sorted_idx = np.argsort([conf for conf in pred_df["conf"]])
-    # Assign prediction bounding boxes to the ground truth bounding box that has the highest IoU and is over the threshold.
-    pred_adjlist = [-1]*len(pred_df)
-    for pred_idx in pred_sorted_idx:
-        gt_iousorted_idx = np.argsort([IoU(pred_df["bbox"][pred_idx], gt_bbox) for gt_bbox in gt_df["bbox"]])
-        for gt_idx in gt_iousorted_idx:
-            if not gt_idx in pred_adjlist:
-                break  # we have found an unassigned gt bbox
-        if IoU(pred_df["bbox"][pred_idx], gt_df["bbox"][gt_idx]) > iou_thrs:
-            pred_adjlist[pred_idx] = gt_idx
-    return pred_adjlist
 
 if __name__ == "__main__":
     print("Loading detector...", end=" ")
