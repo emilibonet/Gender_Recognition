@@ -50,6 +50,6 @@ if __name__ == "__main__":
         ann.to_csv(f'{pred_dir}{img_name}.csv', index=False)
         utils.draw_annotation(img_path, ann, save_path)
         faces = crop_faces(img, ann)
-        std_width, std_height = 112, 112    # width, height
+        std_width, std_height = 64, 64    # width, height
         faces = [cv2.resize(face, (std_width, std_height), interpolation = cv2.INTER_CUBIC) for face in faces]
         [cv2.imwrite(f"{face_dir}{img_name}_face{i}.png", face[:, :, ::-1]) for i,face in enumerate(faces)]

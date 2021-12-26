@@ -1,4 +1,5 @@
 import cv2
+import numpy as np
 import pandas as pd
 import xml.etree.ElementTree as ET
 from ast import literal_eval  # CSV bbox as list
@@ -69,19 +70,29 @@ def IoU(bbox_a, bbox_b):
     # areas of bboxes a, b and intersection
     area_a = (bbox_a[2] - bbox_a[0]) * (bbox_a[3] - bbox_a[1])
     area_b = (bbox_b[2] - bbox_b[0]) * (bbox_b[3] - bbox_b[1])
-    area_inter = (x_max - x_min) * (y_max - y_min)
+    area_inter = max((x_max - x_min) * (y_max - y_min), 0)
     return area_inter / float(area_a + area_b - area_inter)
 
 
-def pred2gt_pairup(pred_df, gt_df, iou_thrs=.5):
-    pred_sorted_idx = np.argsort([conf for conf in pred_df["conf"]])
+def pred2gt_pairup(pred_df, gt_df, iou_thrs=.0):
+    pred_sorted_idx = np.argsort([conf for conf in pred_df["bbox_conf"]])[::-1]    # sort bbox idx by decreasing confidence.
     # Assign prediction bounding boxes to the ground truth bounding box that has the highest IoU and is over the threshold.
     pred_adjlist = [None]*len(pred_df)
     for pred_idx in pred_sorted_idx:
         gt_iousorted_idx = np.argsort([IoU(pred_df["bbox"][pred_idx], gt_bbox) for gt_bbox in gt_df["bbox"]])
         for gt_idx in gt_iousorted_idx:
-            if not gt_idx in pred_adjlist:
-                break  # we have found an unassigned gt bbox
-        if IoU(pred_df["bbox"][pred_idx], gt_df["bbox"][gt_idx]) > iou_thrs:
-            pred_adjlist[pred_idx] = gt_idx
+            if gt_idx in pred_adjlist:
+                continue    # GT bbox has already been assigned to another prediction bbox
+            if IoU(pred_df["bbox"][pred_idx], gt_df["bbox"][gt_idx]) > iou_thrs:
+                pred_adjlist[pred_idx] = gt_idx
     return pred_adjlist  # pred_df["gender"][4] == gt_df["gender"][pred_adjlist[4]]
+
+if __name__ == "__main__":
+    dir_gt, dir_pred = f"{root}data/annotations/ground_truth", f"{root}data/annotations/predictions"
+    image_names = [name[:-4] for name in os.listdir(dir_gt) if name[-3:] == "csv"]
+    for img_name in image_names:
+        df_gt, df_pred = read_annotations(dir_gt+f"/{img_name}.csv"), read_annotations(dir_pred+f"/{img_name}.csv")
+        pred_adjlist = pred2gt_pairup(df_pred, df_gt)
+        for i in range(len(df_pred["bbox"])):
+            print(df_pred["bbox"][i], df_gt["bbox"][pred_adjlist[i]], df_pred["gender"][i], df_gt["gender"][pred_adjlist[i]])
+        break
