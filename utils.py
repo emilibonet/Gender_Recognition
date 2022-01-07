@@ -47,7 +47,7 @@ def draw_annotation(img_path, annotations, save_path=None):
     else:
         ann = annotations
     img = read_image(img_path)
-    gender2color = {"man":(255, 0, 0), "woman":(0, 0, 255), "undef":(0, 255, 0)}
+    gender2color = {"man":(252, 132, 0), "woman":(115, 0, 255), "undef":(0, 252, 82)}
     if img is None or ann is None:
         return None
     for i in range(len(ann)):
@@ -86,13 +86,3 @@ def pred2gt_pairup(pred_df, gt_df, iou_thrs=.0):
             if IoU(pred_df["bbox"][pred_idx], gt_df["bbox"][gt_idx]) > iou_thrs:
                 pred_adjlist[pred_idx] = gt_idx
     return pred_adjlist  # pred_df["gender"][4] == gt_df["gender"][pred_adjlist[4]]
-
-if __name__ == "__main__":
-    dir_gt, dir_pred = f"{root}data/annotations/ground_truth", f"{root}data/annotations/predictions"
-    image_names = [name[:-4] for name in os.listdir(dir_gt) if name[-3:] == "csv"]
-    for img_name in image_names:
-        df_gt, df_pred = read_annotations(dir_gt+f"/{img_name}.csv"), read_annotations(dir_pred+f"/{img_name}.csv")
-        pred_adjlist = pred2gt_pairup(df_pred, df_gt)
-        for i in range(len(df_pred["bbox"])):
-            print(df_pred["bbox"][i], df_gt["bbox"][pred_adjlist[i]], df_pred["gender"][i], df_gt["gender"][pred_adjlist[i]])
-        break
