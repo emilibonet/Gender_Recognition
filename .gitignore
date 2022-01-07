@@ -1,4 +1,3 @@
-*.ipynb
 data
 *pth
 sweep_testing/*
