@@ -1,0 +1,10 @@
+wandb_version: 1
+
+batch_size:
+  value: 14
+dropout:
+  value: 0.08721662350304177
+lr:
+  value: 0.0001
+momentum:
+  value: 0.9888289462136308

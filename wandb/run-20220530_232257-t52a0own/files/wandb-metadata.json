@@ -1,0 +1,27 @@
+{
+    "os": "Linux-5.13.0-44-generic-x86_64-with-glibc2.34",
+    "python": "3.10.2",
+    "heartbeatAt": "2022-05-30T21:23:02.154505",
+    "startedAt": "2022-05-30T21:22:57.668406",
+    "docker": null,
+    "cpu_count": 16,
+    "cuda": null,
+    "args": [
+        "--wandb",
+        "emilibonet",
+        "--wandb_key",
+        "c0642dc0ab37d5d2c491c5195994f6f027b6ad04"
+    ],
+    "state": "running",
+    "program": "/home/emili/Documents/Universitat/TFG/cv-gender-age-recognition/code/models/ours/sweeper.py",
+    "codePath": "code/models/ours/sweeper.py",
+    "git": {
+        "remote": "git@gitlab.com:viume/cv-gender-age-recognition.git",
+        "commit": "409a058be2ae352729dd9c645fd41dace87eda6c"
+    },
+    "email": "emili.bonet@viume.co",
+    "root": "/home/emili/Documents/Universitat/TFG/cv-gender-age-recognition",
+    "host": "griset",
+    "username": "emili",
+    "executable": "/home/emili/miniconda3/envs/viume/bin/python"
+}

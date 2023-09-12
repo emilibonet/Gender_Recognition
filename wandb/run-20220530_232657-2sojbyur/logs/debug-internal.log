@@ -1,0 +1,66 @@
+2022-05-30 23:26:59,318 INFO    MainThread:96024 [internal.py:wandb_internal():90] W&B internal server running at pid: 96024, started at: 2022-05-30 23:26:59.317997
+2022-05-30 23:26:59,323 INFO    WriterThread:96024 [datastore.py:open_for_write():75] open: /home/emili/Documents/Universitat/TFG/cv-gender-age-recognition/wandb/run-20220530_232657-2sojbyur/run-2sojbyur.wandb
+2022-05-30 23:26:59,325 DEBUG   SenderThread:96024 [sender.py:send():232] send: header
+2022-05-30 23:26:59,326 DEBUG   SenderThread:96024 [sender.py:send():232] send: run
+2022-05-30 23:26:59,786 DEBUG   HandlerThread:96024 [handler.py:handle_request():141] handle_request: check_version
+2022-05-30 23:26:59,789 INFO    SenderThread:96024 [dir_watcher.py:__init__():166] watching files in: /home/emili/Documents/Universitat/TFG/cv-gender-age-recognition/wandb/run-20220530_232657-2sojbyur/files
+2022-05-30 23:26:59,789 INFO    SenderThread:96024 [sender.py:_start_run_threads():811] run started: 2sojbyur with start time 1653946017
+2022-05-30 23:26:59,789 DEBUG   SenderThread:96024 [sender.py:send():232] send: summary
+2022-05-30 23:26:59,789 INFO    SenderThread:96024 [sender.py:_save_file():946] saving file wandb-summary.json with policy end
+2022-05-30 23:26:59,790 DEBUG   SenderThread:96024 [sender.py:send_request():246] send_request: check_version
+2022-05-30 23:27:00,221 DEBUG   HandlerThread:96024 [handler.py:handle_request():141] handle_request: run_start
+2022-05-30 23:27:00,802 INFO    Thread-13 :96024 [dir_watcher.py:_on_file_created():213] file/dir created: /home/emili/Documents/Universitat/TFG/cv-gender-age-recognition/wandb/run-20220530_232657-2sojbyur/files/wandb-summary.json
+2022-05-30 23:27:02,299 DEBUG   HandlerThread:96024 [meta.py:__init__():35] meta init
+2022-05-30 23:27:02,299 DEBUG   HandlerThread:96024 [meta.py:__init__():49] meta init done
+2022-05-30 23:27:02,299 DEBUG   HandlerThread:96024 [meta.py:probe():209] probe
+2022-05-30 23:27:02,302 DEBUG   HandlerThread:96024 [meta.py:_setup_git():199] setup git
+2022-05-30 23:27:02,309 DEBUG   HandlerThread:96024 [meta.py:_setup_git():206] setup git done
+2022-05-30 23:27:02,309 DEBUG   HandlerThread:96024 [meta.py:_save_pip():53] save pip
+2022-05-30 23:27:02,309 DEBUG   HandlerThread:96024 [meta.py:_save_pip():67] save pip done
+2022-05-30 23:27:02,310 DEBUG   HandlerThread:96024 [meta.py:_save_conda():74] save conda
+2022-05-30 23:27:02,794 INFO    Thread-13 :96024 [dir_watcher.py:_on_file_created():213] file/dir created: /home/emili/Documents/Universitat/TFG/cv-gender-age-recognition/wandb/run-20220530_232657-2sojbyur/files/requirements.txt
+2022-05-30 23:27:02,794 INFO    Thread-13 :96024 [dir_watcher.py:_on_file_created():213] file/dir created: /home/emili/Documents/Universitat/TFG/cv-gender-age-recognition/wandb/run-20220530_232657-2sojbyur/files/conda-environment.yaml
+2022-05-30 23:27:05,795 INFO    Thread-13 :96024 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/emili/Documents/Universitat/TFG/cv-gender-age-recognition/wandb/run-20220530_232657-2sojbyur/files/conda-environment.yaml
+2022-05-30 23:27:05,795 INFO    Thread-13 :96024 [dir_watcher.py:_on_file_created():213] file/dir created: /home/emili/Documents/Universitat/TFG/cv-gender-age-recognition/wandb/run-20220530_232657-2sojbyur/files/output.log
+2022-05-30 23:27:05,831 DEBUG   HandlerThread:96024 [meta.py:_save_conda():84] save conda done
+2022-05-30 23:27:05,832 DEBUG   HandlerThread:96024 [meta.py:probe():247] probe done
+2022-05-30 23:27:05,835 DEBUG   HandlerThread:96024 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-30 23:27:05,836 DEBUG   SenderThread:96024 [sender.py:send_request():246] send_request: stop_status
+2022-05-30 23:27:06,248 DEBUG   SenderThread:96024 [sender.py:send():232] send: telemetry
+2022-05-30 23:27:06,249 DEBUG   SenderThread:96024 [sender.py:send():232] send: telemetry
+2022-05-30 23:27:06,249 DEBUG   SenderThread:96024 [sender.py:send():232] send: config
+2022-05-30 23:27:06,250 DEBUG   SenderThread:96024 [sender.py:send():232] send: config
+2022-05-30 23:27:06,251 DEBUG   SenderThread:96024 [sender.py:send():232] send: files
+2022-05-30 23:27:06,252 INFO    SenderThread:96024 [sender.py:_save_file():946] saving file wandb-metadata.json with policy now
+2022-05-30 23:27:06,797 INFO    Thread-13 :96024 [dir_watcher.py:_on_file_created():213] file/dir created: /home/emili/Documents/Universitat/TFG/cv-gender-age-recognition/wandb/run-20220530_232657-2sojbyur/files/wandb-metadata.json
+2022-05-30 23:27:07,322 INFO    Thread-17 :96024 [upload_job.py:push():137] Uploaded file /tmp/tmpjvddhp31wandb/2sf9jt4e-wandb-metadata.json
+2022-05-30 23:27:21,256 DEBUG   HandlerThread:96024 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-30 23:27:21,256 DEBUG   SenderThread:96024 [sender.py:send_request():246] send_request: stop_status
+2022-05-30 23:27:30,382 DEBUG   SenderThread:96024 [sender.py:send():232] send: stats
+2022-05-30 23:27:30,809 INFO    Thread-13 :96024 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/emili/Documents/Universitat/TFG/cv-gender-age-recognition/wandb/run-20220530_232657-2sojbyur/files/config.yaml
+2022-05-30 23:27:36,660 DEBUG   HandlerThread:96024 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-30 23:27:36,661 DEBUG   SenderThread:96024 [sender.py:send_request():246] send_request: stop_status
+2022-05-30 23:27:52,095 DEBUG   HandlerThread:96024 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-30 23:27:52,096 DEBUG   SenderThread:96024 [sender.py:send_request():246] send_request: stop_status
+2022-05-30 23:28:00,496 DEBUG   SenderThread:96024 [sender.py:send():232] send: stats
+2022-05-30 23:28:04,543 WARNING MainThread:96024 [internal.py:wandb_internal():153] Internal process interrupt: 1
+2022-05-30 23:28:04,694 WARNING MainThread:96024 [internal.py:wandb_internal():153] Internal process interrupt: 2
+2022-05-30 23:28:04,694 ERROR   MainThread:96024 [internal.py:wandb_internal():156] Internal process interrupted.
+2022-05-30 23:28:04,873 INFO    SenderThread:96024 [sender.py:finish():1106] shutting down sender
+2022-05-30 23:28:04,873 INFO    SenderThread:96024 [dir_watcher.py:finish():279] shutting down directory watcher
+2022-05-30 23:28:04,875 INFO    HandlerThread:96024 [handler.py:finish():806] shutting down handler
+2022-05-30 23:28:05,499 INFO    WriterThread:96024 [datastore.py:close():279] close: /home/emili/Documents/Universitat/TFG/cv-gender-age-recognition/wandb/run-20220530_232657-2sojbyur/run-2sojbyur.wandb
+2022-05-30 23:28:05,823 INFO    SenderThread:96024 [dir_watcher.py:finish():309] scan: /home/emili/Documents/Universitat/TFG/cv-gender-age-recognition/wandb/run-20220530_232657-2sojbyur/files
+2022-05-30 23:28:05,824 INFO    SenderThread:96024 [dir_watcher.py:finish():323] scan save: /home/emili/Documents/Universitat/TFG/cv-gender-age-recognition/wandb/run-20220530_232657-2sojbyur/files/wandb-summary.json wandb-summary.json
+2022-05-30 23:28:05,825 INFO    SenderThread:96024 [dir_watcher.py:finish():323] scan save: /home/emili/Documents/Universitat/TFG/cv-gender-age-recognition/wandb/run-20220530_232657-2sojbyur/files/conda-environment.yaml conda-environment.yaml
+2022-05-30 23:28:05,826 INFO    SenderThread:96024 [dir_watcher.py:finish():323] scan save: /home/emili/Documents/Universitat/TFG/cv-gender-age-recognition/wandb/run-20220530_232657-2sojbyur/files/config.yaml config.yaml
+2022-05-30 23:28:05,827 INFO    SenderThread:96024 [dir_watcher.py:finish():323] scan save: /home/emili/Documents/Universitat/TFG/cv-gender-age-recognition/wandb/run-20220530_232657-2sojbyur/files/requirements.txt requirements.txt
+2022-05-30 23:28:05,828 INFO    SenderThread:96024 [dir_watcher.py:finish():323] scan save: /home/emili/Documents/Universitat/TFG/cv-gender-age-recognition/wandb/run-20220530_232657-2sojbyur/files/output.log output.log
+2022-05-30 23:28:05,828 INFO    SenderThread:96024 [dir_watcher.py:finish():323] scan save: /home/emili/Documents/Universitat/TFG/cv-gender-age-recognition/wandb/run-20220530_232657-2sojbyur/files/wandb-metadata.json wandb-metadata.json
+2022-05-30 23:28:05,829 INFO    SenderThread:96024 [file_pusher.py:finish():145] shutting down file pusher
+2022-05-30 23:28:05,829 INFO    SenderThread:96024 [file_pusher.py:join():150] waiting for file pusher
+2022-05-30 23:28:06,881 INFO    Thread-18 :96024 [upload_job.py:push():137] Uploaded file /home/emili/Documents/Universitat/TFG/cv-gender-age-recognition/wandb/run-20220530_232657-2sojbyur/files/wandb-summary.json
+2022-05-30 23:28:06,909 INFO    Thread-21 :96024 [upload_job.py:push():137] Uploaded file /home/emili/Documents/Universitat/TFG/cv-gender-age-recognition/wandb/run-20220530_232657-2sojbyur/files/requirements.txt
+2022-05-30 23:28:06,920 INFO    Thread-19 :96024 [upload_job.py:push():137] Uploaded file /home/emili/Documents/Universitat/TFG/cv-gender-age-recognition/wandb/run-20220530_232657-2sojbyur/files/conda-environment.yaml
+2022-05-30 23:28:06,967 INFO    Thread-20 :96024 [upload_job.py:push():137] Uploaded file /home/emili/Documents/Universitat/TFG/cv-gender-age-recognition/wandb/run-20220530_232657-2sojbyur/files/config.yaml
+2022-05-30 23:28:07,185 INFO    MainThread:96024 [internal.py:handle_exit():80] Internal process exited

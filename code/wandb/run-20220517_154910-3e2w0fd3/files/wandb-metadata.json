@@ -1,0 +1,22 @@
+{
+    "os": "Linux-5.13.0-41-generic-x86_64-with-glibc2.34",
+    "python": "3.10.2",
+    "heartbeatAt": "2022-05-17T13:49:13.816482",
+    "startedAt": "2022-05-17T13:49:10.643433",
+    "docker": null,
+    "cpu_count": 16,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/emili/Documents/Universitat/TFG/cv-gender-age-recognition/code/dummy.py",
+    "codePath": "code/dummy.py",
+    "git": {
+        "remote": "git@gitlab.com:viume/cv-gender-age-recognition.git",
+        "commit": "60f9bc24603043f19b27a454c3e0ea920ee9aadd"
+    },
+    "email": "emili.bonet@viume.co",
+    "root": "/home/emili/Documents/Universitat/TFG/cv-gender-age-recognition",
+    "host": "griset",
+    "username": "emili",
+    "executable": "/home/emili/miniconda3/envs/viume/bin/python"
+}

@@ -1,0 +1,164 @@
+2022-05-30 23:20:42,209 INFO    MainThread:93075 [internal.py:wandb_internal():90] W&B internal server running at pid: 93075, started at: 2022-05-30 23:20:42.209123
+2022-05-30 23:20:42,213 INFO    WriterThread:93075 [datastore.py:open_for_write():75] open: /home/emili/Documents/Universitat/TFG/cv-gender-age-recognition/wandb/run-20220530_232040-09iqknfw/run-09iqknfw.wandb
+2022-05-30 23:20:42,216 DEBUG   SenderThread:93075 [sender.py:send():232] send: header
+2022-05-30 23:20:42,216 DEBUG   SenderThread:93075 [sender.py:send():232] send: run
+2022-05-30 23:20:42,683 INFO    SenderThread:93075 [dir_watcher.py:__init__():166] watching files in: /home/emili/Documents/Universitat/TFG/cv-gender-age-recognition/wandb/run-20220530_232040-09iqknfw/files
+2022-05-30 23:20:42,683 INFO    SenderThread:93075 [sender.py:_start_run_threads():811] run started: 09iqknfw with start time 1653945640
+2022-05-30 23:20:42,683 DEBUG   SenderThread:93075 [sender.py:send():232] send: summary
+2022-05-30 23:20:42,684 INFO    SenderThread:93075 [sender.py:_save_file():946] saving file wandb-summary.json with policy end
+2022-05-30 23:20:42,685 DEBUG   HandlerThread:93075 [handler.py:handle_request():141] handle_request: check_version
+2022-05-30 23:20:42,686 DEBUG   SenderThread:93075 [sender.py:send_request():246] send_request: check_version
+2022-05-30 23:20:43,116 DEBUG   HandlerThread:93075 [handler.py:handle_request():141] handle_request: run_start
+2022-05-30 23:20:43,687 INFO    Thread-13 :93075 [dir_watcher.py:_on_file_created():213] file/dir created: /home/emili/Documents/Universitat/TFG/cv-gender-age-recognition/wandb/run-20220530_232040-09iqknfw/files/wandb-summary.json
+2022-05-30 23:20:48,684 INFO    Thread-13 :93075 [dir_watcher.py:_on_file_created():213] file/dir created: /home/emili/Documents/Universitat/TFG/cv-gender-age-recognition/wandb/run-20220530_232040-09iqknfw/files/output.log
+2022-05-30 23:20:59,144 DEBUG   HandlerThread:93075 [meta.py:__init__():35] meta init
+2022-05-30 23:20:59,144 DEBUG   HandlerThread:93075 [meta.py:__init__():49] meta init done
+2022-05-30 23:20:59,144 DEBUG   HandlerThread:93075 [meta.py:probe():209] probe
+2022-05-30 23:20:59,146 DEBUG   HandlerThread:93075 [meta.py:_setup_git():199] setup git
+2022-05-30 23:20:59,153 DEBUG   HandlerThread:93075 [meta.py:_setup_git():206] setup git done
+2022-05-30 23:20:59,153 DEBUG   HandlerThread:93075 [meta.py:_save_pip():53] save pip
+2022-05-30 23:20:59,153 DEBUG   HandlerThread:93075 [meta.py:_save_pip():67] save pip done
+2022-05-30 23:20:59,153 DEBUG   HandlerThread:93075 [meta.py:_save_conda():74] save conda
+2022-05-30 23:20:59,696 INFO    Thread-13 :93075 [dir_watcher.py:_on_file_created():213] file/dir created: /home/emili/Documents/Universitat/TFG/cv-gender-age-recognition/wandb/run-20220530_232040-09iqknfw/files/requirements.txt
+2022-05-30 23:20:59,696 INFO    Thread-13 :93075 [dir_watcher.py:_on_file_created():213] file/dir created: /home/emili/Documents/Universitat/TFG/cv-gender-age-recognition/wandb/run-20220530_232040-09iqknfw/files/conda-environment.yaml
+2022-05-30 23:21:02,690 DEBUG   HandlerThread:93075 [meta.py:_save_conda():84] save conda done
+2022-05-30 23:21:02,690 DEBUG   HandlerThread:93075 [meta.py:probe():247] probe done
+2022-05-30 23:21:02,694 DEBUG   HandlerThread:93075 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-30 23:21:02,694 DEBUG   SenderThread:93075 [sender.py:send_request():246] send_request: stop_status
+2022-05-30 23:21:02,700 INFO    Thread-13 :93075 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/emili/Documents/Universitat/TFG/cv-gender-age-recognition/wandb/run-20220530_232040-09iqknfw/files/conda-environment.yaml
+2022-05-30 23:21:02,700 INFO    Thread-13 :93075 [dir_watcher.py:_on_file_created():213] file/dir created: /home/emili/Documents/Universitat/TFG/cv-gender-age-recognition/wandb/run-20220530_232040-09iqknfw/files/wandb-metadata.json
+2022-05-30 23:21:03,103 DEBUG   SenderThread:93075 [sender.py:send():232] send: telemetry
+2022-05-30 23:21:03,104 DEBUG   SenderThread:93075 [sender.py:send():232] send: files
+2022-05-30 23:21:03,105 INFO    SenderThread:93075 [sender.py:_save_file():946] saving file wandb-metadata.json with policy now
+2022-05-30 23:21:04,157 INFO    Thread-17 :93075 [upload_job.py:push():137] Uploaded file /tmp/tmprfsxgcl1wandb/zg505g3n-wandb-metadata.json
+2022-05-30 23:21:08,126 DEBUG   HandlerThread:93075 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-30 23:21:08,126 DEBUG   SenderThread:93075 [sender.py:send_request():246] send_request: stop_status
+2022-05-30 23:21:13,704 INFO    Thread-13 :93075 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/emili/Documents/Universitat/TFG/cv-gender-age-recognition/wandb/run-20220530_232040-09iqknfw/files/config.yaml
+2022-05-30 23:21:23,528 DEBUG   HandlerThread:93075 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-30 23:21:23,528 DEBUG   SenderThread:93075 [sender.py:send_request():246] send_request: stop_status
+2022-05-30 23:21:27,217 DEBUG   SenderThread:93075 [sender.py:send():232] send: stats
+2022-05-30 23:21:34,065 DEBUG   SenderThread:93075 [sender.py:send():232] send: telemetry
+2022-05-30 23:21:34,069 DEBUG   SenderThread:93075 [sender.py:send():232] send: telemetry
+2022-05-30 23:21:34,070 DEBUG   SenderThread:93075 [sender.py:send():232] send: exit
+2022-05-30 23:21:34,070 DEBUG   HandlerThread:93075 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-30 23:21:34,070 INFO    SenderThread:93075 [sender.py:send_exit():368] handling exit code: 1
+2022-05-30 23:21:34,071 INFO    SenderThread:93075 [sender.py:send_exit():370] handling runtime: 50
+2022-05-30 23:21:34,080 INFO    SenderThread:93075 [sender.py:_save_file():946] saving file wandb-summary.json with policy end
+2022-05-30 23:21:34,080 INFO    SenderThread:93075 [sender.py:send_exit():376] send defer
+2022-05-30 23:21:34,080 DEBUG   SenderThread:93075 [sender.py:send_request():246] send_request: poll_exit
+2022-05-30 23:21:34,081 DEBUG   HandlerThread:93075 [handler.py:handle_request():141] handle_request: defer
+2022-05-30 23:21:34,082 INFO    HandlerThread:93075 [handler.py:handle_request_defer():164] handle defer: 0
+2022-05-30 23:21:34,082 DEBUG   SenderThread:93075 [sender.py:send_request():246] send_request: defer
+2022-05-30 23:21:34,082 INFO    SenderThread:93075 [sender.py:send_request_defer():385] handle sender defer: 0
+2022-05-30 23:21:34,083 INFO    SenderThread:93075 [sender.py:transition_state():389] send defer: 1
+2022-05-30 23:21:34,083 DEBUG   HandlerThread:93075 [handler.py:handle_request():141] handle_request: defer
+2022-05-30 23:21:34,083 INFO    HandlerThread:93075 [handler.py:handle_request_defer():164] handle defer: 1
+2022-05-30 23:21:34,142 DEBUG   SenderThread:93075 [sender.py:send_request():246] send_request: defer
+2022-05-30 23:21:34,142 INFO    SenderThread:93075 [sender.py:send_request_defer():385] handle sender defer: 1
+2022-05-30 23:21:34,142 INFO    SenderThread:93075 [sender.py:transition_state():389] send defer: 2
+2022-05-30 23:21:34,143 DEBUG   SenderThread:93075 [sender.py:send():232] send: stats
+2022-05-30 23:21:34,143 DEBUG   HandlerThread:93075 [handler.py:handle_request():141] handle_request: defer
+2022-05-30 23:21:34,143 INFO    HandlerThread:93075 [handler.py:handle_request_defer():164] handle defer: 2
+2022-05-30 23:21:34,143 DEBUG   SenderThread:93075 [sender.py:send_request():246] send_request: defer
+2022-05-30 23:21:34,143 INFO    SenderThread:93075 [sender.py:send_request_defer():385] handle sender defer: 2
+2022-05-30 23:21:34,143 INFO    SenderThread:93075 [sender.py:transition_state():389] send defer: 3
+2022-05-30 23:21:34,144 DEBUG   HandlerThread:93075 [handler.py:handle_request():141] handle_request: defer
+2022-05-30 23:21:34,144 INFO    HandlerThread:93075 [handler.py:handle_request_defer():164] handle defer: 3
+2022-05-30 23:21:34,144 DEBUG   SenderThread:93075 [sender.py:send_request():246] send_request: defer
+2022-05-30 23:21:34,144 INFO    SenderThread:93075 [sender.py:send_request_defer():385] handle sender defer: 3
+2022-05-30 23:21:34,144 INFO    SenderThread:93075 [sender.py:transition_state():389] send defer: 4
+2022-05-30 23:21:34,144 DEBUG   HandlerThread:93075 [handler.py:handle_request():141] handle_request: defer
+2022-05-30 23:21:34,144 INFO    HandlerThread:93075 [handler.py:handle_request_defer():164] handle defer: 4
+2022-05-30 23:21:34,145 DEBUG   SenderThread:93075 [sender.py:send():232] send: summary
+2022-05-30 23:21:34,145 INFO    SenderThread:93075 [sender.py:_save_file():946] saving file wandb-summary.json with policy end
+2022-05-30 23:21:34,145 DEBUG   SenderThread:93075 [sender.py:send_request():246] send_request: defer
+2022-05-30 23:21:34,145 INFO    SenderThread:93075 [sender.py:send_request_defer():385] handle sender defer: 4
+2022-05-30 23:21:34,145 INFO    SenderThread:93075 [sender.py:transition_state():389] send defer: 5
+2022-05-30 23:21:34,146 DEBUG   HandlerThread:93075 [handler.py:handle_request():141] handle_request: defer
+2022-05-30 23:21:34,146 INFO    HandlerThread:93075 [handler.py:handle_request_defer():164] handle defer: 5
+2022-05-30 23:21:34,146 DEBUG   SenderThread:93075 [sender.py:send_request():246] send_request: defer
+2022-05-30 23:21:34,146 INFO    SenderThread:93075 [sender.py:send_request_defer():385] handle sender defer: 5
+2022-05-30 23:21:34,183 DEBUG   HandlerThread:93075 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-30 23:21:34,576 INFO    SenderThread:93075 [sender.py:transition_state():389] send defer: 6
+2022-05-30 23:21:34,576 DEBUG   SenderThread:93075 [sender.py:send_request():246] send_request: poll_exit
+2022-05-30 23:21:34,577 DEBUG   HandlerThread:93075 [handler.py:handle_request():141] handle_request: defer
+2022-05-30 23:21:34,577 INFO    HandlerThread:93075 [handler.py:handle_request_defer():164] handle defer: 6
+2022-05-30 23:21:34,577 DEBUG   SenderThread:93075 [sender.py:send_request():246] send_request: defer
+2022-05-30 23:21:34,577 INFO    SenderThread:93075 [sender.py:send_request_defer():385] handle sender defer: 6
+2022-05-30 23:21:34,577 INFO    SenderThread:93075 [dir_watcher.py:finish():279] shutting down directory watcher
+2022-05-30 23:21:34,679 DEBUG   HandlerThread:93075 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-30 23:21:34,711 INFO    SenderThread:93075 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/emili/Documents/Universitat/TFG/cv-gender-age-recognition/wandb/run-20220530_232040-09iqknfw/files/config.yaml
+2022-05-30 23:21:34,713 INFO    SenderThread:93075 [dir_watcher.py:_on_file_modified():226] file/dir modified: /home/emili/Documents/Universitat/TFG/cv-gender-age-recognition/wandb/run-20220530_232040-09iqknfw/files/wandb-summary.json
+2022-05-30 23:21:34,714 INFO    SenderThread:93075 [dir_watcher.py:finish():309] scan: /home/emili/Documents/Universitat/TFG/cv-gender-age-recognition/wandb/run-20220530_232040-09iqknfw/files
+2022-05-30 23:21:34,715 INFO    SenderThread:93075 [dir_watcher.py:finish():323] scan save: /home/emili/Documents/Universitat/TFG/cv-gender-age-recognition/wandb/run-20220530_232040-09iqknfw/files/wandb-summary.json wandb-summary.json
+2022-05-30 23:21:34,716 INFO    SenderThread:93075 [dir_watcher.py:finish():323] scan save: /home/emili/Documents/Universitat/TFG/cv-gender-age-recognition/wandb/run-20220530_232040-09iqknfw/files/conda-environment.yaml conda-environment.yaml
+2022-05-30 23:21:34,718 INFO    SenderThread:93075 [dir_watcher.py:finish():323] scan save: /home/emili/Documents/Universitat/TFG/cv-gender-age-recognition/wandb/run-20220530_232040-09iqknfw/files/config.yaml config.yaml
+2022-05-30 23:21:34,721 INFO    SenderThread:93075 [dir_watcher.py:finish():323] scan save: /home/emili/Documents/Universitat/TFG/cv-gender-age-recognition/wandb/run-20220530_232040-09iqknfw/files/requirements.txt requirements.txt
+2022-05-30 23:21:34,722 INFO    SenderThread:93075 [dir_watcher.py:finish():323] scan save: /home/emili/Documents/Universitat/TFG/cv-gender-age-recognition/wandb/run-20220530_232040-09iqknfw/files/output.log output.log
+2022-05-30 23:21:34,745 INFO    SenderThread:93075 [dir_watcher.py:finish():323] scan save: /home/emili/Documents/Universitat/TFG/cv-gender-age-recognition/wandb/run-20220530_232040-09iqknfw/files/wandb-metadata.json wandb-metadata.json
+2022-05-30 23:21:34,771 INFO    SenderThread:93075 [sender.py:transition_state():389] send defer: 7
+2022-05-30 23:21:34,783 DEBUG   SenderThread:93075 [sender.py:send_request():246] send_request: poll_exit
+2022-05-30 23:21:34,801 DEBUG   HandlerThread:93075 [handler.py:handle_request():141] handle_request: defer
+2022-05-30 23:21:34,801 INFO    HandlerThread:93075 [handler.py:handle_request_defer():164] handle defer: 7
+2022-05-30 23:21:34,806 DEBUG   SenderThread:93075 [sender.py:send_request():246] send_request: defer
+2022-05-30 23:21:34,811 INFO    SenderThread:93075 [sender.py:send_request_defer():385] handle sender defer: 7
+2022-05-30 23:21:34,814 INFO    SenderThread:93075 [file_pusher.py:finish():145] shutting down file pusher
+2022-05-30 23:21:34,903 DEBUG   HandlerThread:93075 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-30 23:21:34,903 DEBUG   SenderThread:93075 [sender.py:send_request():246] send_request: poll_exit
+2022-05-30 23:21:35,005 DEBUG   HandlerThread:93075 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-30 23:21:35,006 DEBUG   SenderThread:93075 [sender.py:send_request():246] send_request: poll_exit
+2022-05-30 23:21:35,110 DEBUG   HandlerThread:93075 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-30 23:21:35,111 DEBUG   SenderThread:93075 [sender.py:send_request():246] send_request: poll_exit
+2022-05-30 23:21:35,219 DEBUG   HandlerThread:93075 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-30 23:21:35,226 DEBUG   SenderThread:93075 [sender.py:send_request():246] send_request: poll_exit
+2022-05-30 23:21:35,346 DEBUG   HandlerThread:93075 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-30 23:21:35,347 DEBUG   SenderThread:93075 [sender.py:send_request():246] send_request: poll_exit
+2022-05-30 23:21:35,451 DEBUG   HandlerThread:93075 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-30 23:21:35,452 DEBUG   SenderThread:93075 [sender.py:send_request():246] send_request: poll_exit
+2022-05-30 23:21:35,556 DEBUG   HandlerThread:93075 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-30 23:21:35,556 DEBUG   SenderThread:93075 [sender.py:send_request():246] send_request: poll_exit
+2022-05-30 23:21:35,659 DEBUG   HandlerThread:93075 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-30 23:21:35,660 DEBUG   SenderThread:93075 [sender.py:send_request():246] send_request: poll_exit
+2022-05-30 23:21:35,763 DEBUG   HandlerThread:93075 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-30 23:21:35,763 DEBUG   SenderThread:93075 [sender.py:send_request():246] send_request: poll_exit
+2022-05-30 23:21:35,840 INFO    Thread-18 :93075 [upload_job.py:push():137] Uploaded file /home/emili/Documents/Universitat/TFG/cv-gender-age-recognition/wandb/run-20220530_232040-09iqknfw/files/wandb-summary.json
+2022-05-30 23:21:35,844 INFO    Thread-19 :93075 [upload_job.py:push():137] Uploaded file /home/emili/Documents/Universitat/TFG/cv-gender-age-recognition/wandb/run-20220530_232040-09iqknfw/files/conda-environment.yaml
+2022-05-30 23:21:35,865 DEBUG   HandlerThread:93075 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-30 23:21:35,865 DEBUG   SenderThread:93075 [sender.py:send_request():246] send_request: poll_exit
+2022-05-30 23:21:35,907 INFO    Thread-20 :93075 [upload_job.py:push():137] Uploaded file /home/emili/Documents/Universitat/TFG/cv-gender-age-recognition/wandb/run-20220530_232040-09iqknfw/files/config.yaml
+2022-05-30 23:21:35,916 INFO    Thread-21 :93075 [upload_job.py:push():137] Uploaded file /home/emili/Documents/Universitat/TFG/cv-gender-age-recognition/wandb/run-20220530_232040-09iqknfw/files/requirements.txt
+2022-05-30 23:21:35,966 DEBUG   HandlerThread:93075 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-30 23:21:35,967 DEBUG   SenderThread:93075 [sender.py:send_request():246] send_request: poll_exit
+2022-05-30 23:21:36,069 DEBUG   HandlerThread:93075 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-30 23:21:36,069 DEBUG   SenderThread:93075 [sender.py:send_request():246] send_request: poll_exit
+2022-05-30 23:21:36,119 INFO    Thread-12 (_thread_body):93075 [sender.py:transition_state():389] send defer: 8
+2022-05-30 23:21:36,121 DEBUG   HandlerThread:93075 [handler.py:handle_request():141] handle_request: defer
+2022-05-30 23:21:36,122 INFO    HandlerThread:93075 [handler.py:handle_request_defer():164] handle defer: 8
+2022-05-30 23:21:36,123 DEBUG   SenderThread:93075 [sender.py:send_request():246] send_request: defer
+2022-05-30 23:21:36,123 INFO    SenderThread:93075 [sender.py:send_request_defer():385] handle sender defer: 8
+2022-05-30 23:21:36,170 DEBUG   HandlerThread:93075 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-30 23:21:36,851 INFO    SenderThread:93075 [sender.py:transition_state():389] send defer: 9
+2022-05-30 23:21:36,852 DEBUG   SenderThread:93075 [sender.py:send_request():246] send_request: poll_exit
+2022-05-30 23:21:36,854 DEBUG   HandlerThread:93075 [handler.py:handle_request():141] handle_request: defer
+2022-05-30 23:21:36,854 INFO    HandlerThread:93075 [handler.py:handle_request_defer():164] handle defer: 9
+2022-05-30 23:21:36,856 DEBUG   SenderThread:93075 [sender.py:send_request():246] send_request: defer
+2022-05-30 23:21:36,856 INFO    SenderThread:93075 [sender.py:send_request_defer():385] handle sender defer: 9
+2022-05-30 23:21:36,857 INFO    SenderThread:93075 [sender.py:transition_state():389] send defer: 10
+2022-05-30 23:21:36,859 DEBUG   HandlerThread:93075 [handler.py:handle_request():141] handle_request: defer
+2022-05-30 23:21:36,859 DEBUG   SenderThread:93075 [sender.py:send():232] send: final
+2022-05-30 23:21:36,860 INFO    HandlerThread:93075 [handler.py:handle_request_defer():164] handle defer: 10
+2022-05-30 23:21:36,860 DEBUG   SenderThread:93075 [sender.py:send():232] send: footer
+2022-05-30 23:21:36,861 DEBUG   SenderThread:93075 [sender.py:send_request():246] send_request: defer
+2022-05-30 23:21:36,861 INFO    SenderThread:93075 [sender.py:send_request_defer():385] handle sender defer: 10
+2022-05-30 23:21:36,958 DEBUG   HandlerThread:93075 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-30 23:21:36,959 DEBUG   SenderThread:93075 [sender.py:send_request():246] send_request: poll_exit
+2022-05-30 23:21:36,960 INFO    SenderThread:93075 [file_pusher.py:join():150] waiting for file pusher
+2022-05-30 23:21:37,942 DEBUG   HandlerThread:93075 [handler.py:handle_request():141] handle_request: sampled_history
+2022-05-30 23:21:37,946 DEBUG   HandlerThread:93075 [handler.py:handle_request():141] handle_request: get_summary
+2022-05-30 23:21:37,949 DEBUG   HandlerThread:93075 [handler.py:handle_request():141] handle_request: shutdown
+2022-05-30 23:21:37,950 INFO    HandlerThread:93075 [handler.py:finish():806] shutting down handler
+2022-05-30 23:21:38,839 INFO    SenderThread:93075 [sender.py:finish():1106] shutting down sender
+2022-05-30 23:21:38,839 INFO    SenderThread:93075 [file_pusher.py:finish():145] shutting down file pusher
+2022-05-30 23:21:38,839 INFO    SenderThread:93075 [file_pusher.py:join():150] waiting for file pusher
+2022-05-30 23:21:38,860 INFO    WriterThread:93075 [datastore.py:close():279] close: /home/emili/Documents/Universitat/TFG/cv-gender-age-recognition/wandb/run-20220530_232040-09iqknfw/run-09iqknfw.wandb
+2022-05-30 23:21:39,377 INFO    MainThread:93075 [internal.py:handle_exit():80] Internal process exited

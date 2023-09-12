@@ -1,0 +1,135 @@
+=====================================================================
+ SLURM_JOB_ID        = 1371258
+ SLURM_NODE          = gpic14
+ SLURM_JOB_PARTITION = gpi.compute
+=====================================================================
+Fold 1/4 - Training: 4826 (81.37%); Validation: 1105 18.63%
+Epoch 1/10
+[train] GLoss: 0.3668, GAcc: 0.8247, ALoss: 0.9988, AAcc: 0.7094
+[valid] GLoss: 0.7710, GAcc: 0.6759, ALoss: 1.6521, AAcc: 0.4917
+Epoch 2/10
+[train] GLoss: 0.1774, GAcc: 0.9333, ALoss: 0.5648, AAcc: 0.7620
+[valid] GLoss: 0.7021, GAcc: 0.7431, ALoss: 2.3763, AAcc: 0.5129
+Epoch 3/10
+[train] GLoss: 0.1161, GAcc: 0.9584, ALoss: 0.4163, AAcc: 0.7859
+[valid] GLoss: 0.6081, GAcc: 0.7726, ALoss: 1.5816, AAcc: 0.5157
+Epoch 4/10
+[train] GLoss: 0.0889, GAcc: 0.9678, ALoss: 0.2585, AAcc: 0.8559
+[valid] GLoss: 1.0907, GAcc: 0.6179, ALoss: 2.2495, AAcc: 0.5101
+Epoch 5/10
+[train] GLoss: 0.0649, GAcc: 0.9763, ALoss: 0.2297, AAcc: 0.8742
+[valid] GLoss: 1.0484, GAcc: 0.6234, ALoss: 1.9440, AAcc: 0.5350
+Epoch 6/10
+[train] GLoss: 0.0736, GAcc: 0.9792, ALoss: 0.1738, AAcc: 0.8992
+[valid] GLoss: 1.0458, GAcc: 0.6952, ALoss: 1.7068, AAcc: 0.5506
+Epoch 7/10
+[train] GLoss: 0.0497, GAcc: 0.9852, ALoss: 0.1370, AAcc: 0.9372
+[valid] GLoss: 0.7332, GAcc: 0.7164, ALoss: 1.7791, AAcc: 0.5460
+Epoch 8/10
+[train] GLoss: 0.0656, GAcc: 0.9773, ALoss: 0.1152, AAcc: 0.9376
+[valid] GLoss: 0.7726, GAcc: 0.7735, ALoss: 1.6253, AAcc: 0.5175
+Epoch 9/10
+[train] GLoss: 0.0365, GAcc: 0.9890, ALoss: 0.0897, AAcc: 0.9543
+[valid] GLoss: 1.3317, GAcc: 0.6703, ALoss: 2.4943, AAcc: 0.5276
+Epoch 10/10
+[train] GLoss: 0.0283, GAcc: 0.9900, ALoss: 0.0801, AAcc: 0.9615
+[valid] GLoss: 1.0356, GAcc: 0.6943, ALoss: 1.9387, AAcc: 0.5276
+Fold 2/4 - Training: 4395 (74.10%); Validation: 1536 25.90%
+Epoch 1/10
+[train] GLoss: 0.3486, GAcc: 0.8444, ALoss: 1.2684, AAcc: 0.6819
+[valid] GLoss: 0.7158, GAcc: 0.6667, ALoss: 1.9423, AAcc: 0.4201
+Epoch 2/10
+[train] GLoss: 0.1525, GAcc: 0.9425, ALoss: 0.7617, AAcc: 0.7130
+[valid] GLoss: 0.7241, GAcc: 0.6804, ALoss: 1.4989, AAcc: 0.7162
+Epoch 3/10
+[train] GLoss: 0.1185, GAcc: 0.9546, ALoss: 0.5108, AAcc: 0.7291
+[valid] GLoss: 0.7958, GAcc: 0.6628, ALoss: 1.6684, AAcc: 0.4371
+Epoch 4/10
+[train] GLoss: 0.0883, GAcc: 0.9668, ALoss: 0.3645, AAcc: 0.7800
+[valid] GLoss: 0.7431, GAcc: 0.7260, ALoss: 1.6105, AAcc: 0.4605
+Epoch 5/10
+[train] GLoss: 0.0459, GAcc: 0.9828, ALoss: 0.3466, AAcc: 0.7816
+[valid] GLoss: 0.8415, GAcc: 0.7228, ALoss: 1.5038, AAcc: 0.5734
+Epoch 6/10
+[train] GLoss: 0.0465, GAcc: 0.9846, ALoss: 0.2812, AAcc: 0.8373
+[valid] GLoss: 0.7440, GAcc: 0.7215, ALoss: 1.5795, AAcc: 0.5179
+Epoch 7/10
+[train] GLoss: 0.0442, GAcc: 0.9860, ALoss: 0.2149, AAcc: 0.8595
+[valid] GLoss: 0.8979, GAcc: 0.7267, ALoss: 1.4310, AAcc: 0.5499
+Epoch 8/10
+[train] GLoss: 0.0189, GAcc: 0.9922, ALoss: 0.2248, AAcc: 0.8671
+[valid] GLoss: 1.0552, GAcc: 0.7175, ALoss: 1.4190, AAcc: 0.5682
+Epoch 9/10
+[train] GLoss: 0.0278, GAcc: 0.9876, ALoss: 0.2078, AAcc: 0.8739
+[valid] GLoss: 0.8825, GAcc: 0.7280, ALoss: 1.4622, AAcc: 0.6269
+Epoch 10/10
+[train] GLoss: 0.0224, GAcc: 0.9911, ALoss: 0.1792, AAcc: 0.8758
+[valid] GLoss: 0.7309, GAcc: 0.7678, ALoss: 1.8084, AAcc: 0.4612
+Fold 3/4 - Training: 4213 (71.03%); Validation: 1718 28.97%
+Epoch 1/10
+[train] GLoss: 0.4171, GAcc: 0.7914, ALoss: 1.1683, AAcc: 0.6422
+[valid] GLoss: 0.5853, GAcc: 0.7172, ALoss: 3.5375, AAcc: 0.5778
+Epoch 2/10
+[train] GLoss: 0.2205, GAcc: 0.9194, ALoss: 0.8710, AAcc: 0.6998
+[valid] GLoss: 0.6312, GAcc: 0.7178, ALoss: 2.5767, AAcc: 0.7079
+Epoch 3/10
+[train] GLoss: 0.1429, GAcc: 0.9455, ALoss: 0.6865, AAcc: 0.7271
+[valid] GLoss: 0.5060, GAcc: 0.8000, ALoss: 1.8878, AAcc: 0.6536
+Epoch 4/10
+[train] GLoss: 0.1021, GAcc: 0.9624, ALoss: 0.6669, AAcc: 0.7039
+[valid] GLoss: 0.4842, GAcc: 0.8227, ALoss: 2.2609, AAcc: 0.7469
+Epoch 5/10
+[train] GLoss: 0.0626, GAcc: 0.9763, ALoss: 0.4473, AAcc: 0.7785
+[valid] GLoss: 0.7079, GAcc: 0.7277, ALoss: 2.4032, AAcc: 0.6554
+Epoch 6/10
+[train] GLoss: 0.0605, GAcc: 0.9763, ALoss: 0.4083, AAcc: 0.7771
+[valid] GLoss: 0.5878, GAcc: 0.7878, ALoss: 2.0389, AAcc: 0.6851
+Epoch 7/10
+[train] GLoss: 0.0430, GAcc: 0.9835, ALoss: 0.3660, AAcc: 0.7974
+[valid] GLoss: 0.6704, GAcc: 0.7726, ALoss: 2.1302, AAcc: 0.7551
+Epoch 8/10
+[train] GLoss: 0.0424, GAcc: 0.9845, ALoss: 0.2451, AAcc: 0.8488
+[valid] GLoss: 0.7363, GAcc: 0.7691, ALoss: 2.2767, AAcc: 0.6093
+Epoch 9/10
+[train] GLoss: 0.0333, GAcc: 0.9876, ALoss: 0.2978, AAcc: 0.8182
+[valid] GLoss: 0.6684, GAcc: 0.7516, ALoss: 2.2194, AAcc: 0.7504
+Epoch 10/10
+[train] GLoss: 0.0215, GAcc: 0.9907, ALoss: 0.2729, AAcc: 0.8445
+[valid] GLoss: 0.6908, GAcc: 0.7796, ALoss: 1.8745, AAcc: 0.7580
+Fold 4/4 - Training: 4359 (73.50%); Validation: 1572 26.50%
+Epoch 1/10
+[train] GLoss: 0.4304, GAcc: 0.7877, ALoss: 1.8513, AAcc: 0.6375
+[valid] GLoss: 0.6708, GAcc: 0.6837, ALoss: 0.3128, AAcc: 0.6223
+Epoch 2/10
+[train] GLoss: 0.2071, GAcc: 0.9213, ALoss: 1.5298, AAcc: 0.6241
+[valid] GLoss: 0.4292, GAcc: 0.7964, ALoss: 0.6518, AAcc: 0.5493
+Epoch 3/10
+[train] GLoss: 0.1272, GAcc: 0.9555, ALoss: 1.2467, AAcc: 0.5865
+[valid] GLoss: 0.7795, GAcc: 0.7049, ALoss: 0.4941, AAcc: 0.9392
+Epoch 4/10
+[train] GLoss: 0.0961, GAcc: 0.9665, ALoss: 1.1820, AAcc: 0.5911
+[valid] GLoss: 0.4478, GAcc: 0.8431, ALoss: 0.6828, AAcc: 0.7183
+Epoch 5/10
+[train] GLoss: 0.0825, GAcc: 0.9686, ALoss: 0.9866, AAcc: 0.6414
+[valid] GLoss: 0.4214, GAcc: 0.8009, ALoss: 0.5417, AAcc: 0.3649
+Epoch 6/10
+[train] GLoss: 0.0483, GAcc: 0.9811, ALoss: 0.8399, AAcc: 0.6052
+[valid] GLoss: 0.4700, GAcc: 0.8214, ALoss: 0.4803, AAcc: 0.7471
+Epoch 7/10
+[train] GLoss: 0.0432, GAcc: 0.9845, ALoss: 0.7895, AAcc: 0.6654
+[valid] GLoss: 0.5371, GAcc: 0.7996, ALoss: 0.5909, AAcc: 0.5058
+Epoch 8/10
+[train] GLoss: 0.0475, GAcc: 0.9836, ALoss: 0.7975, AAcc: 0.6578
+[valid] GLoss: 0.4902, GAcc: 0.8233, ALoss: 0.7439, AAcc: 0.4097
+Epoch 9/10
+[train] GLoss: 0.0553, GAcc: 0.9799, ALoss: 0.7659, AAcc: 0.6484
+[valid] GLoss: 0.5089, GAcc: 0.7810, ALoss: 0.5159, AAcc: 0.4853
+Epoch 10/10
+[train] GLoss: 0.0347, GAcc: 0.9864, ALoss: 0.6084, AAcc: 0.6532
+[valid] GLoss: 0.3254, GAcc: 0.8713, ALoss: 0.4613, AAcc: 0.5839
+=====================================================================
+1371258.0 |    TIME   |   CPUs   |   MEM   |   GPUs  | GPU MEM |
+----------|-----------|----------|---------|---------|---------|
+REQUESTED |   12h0m   |   1.00   |   4G    |    1    |   20G   |
+USED      |   3h26m   |   1.00   |  3.69G  | unknown | unknown |
+=====================================================================

@@ -1,0 +1,13 @@
+program: 'sweeper.py'
+method: 'grid'    # start with random search, then grid search over the reduced intervals based on the results of random search
+parameters:
+  dropout:
+    values: [0.15, 0.25]
+  lr:
+    values: [0.1, 0.01, 0.001]
+  momentum:
+    values: [0.7, 0.75, 0.8]
+  batch_size:
+    value: 14
+  weight_decay:
+    value: 0.0

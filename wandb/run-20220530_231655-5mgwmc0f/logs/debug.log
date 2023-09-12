@@ -1,0 +1,17 @@
+2022-05-30 23:16:55,694 INFO    Thread-7 (_run_job):91691 [wandb_setup.py:_flush():75] Loading settings from /home/emili/.config/wandb/settings
+2022-05-30 23:16:55,694 INFO    Thread-7 (_run_job):91691 [wandb_setup.py:_flush():75] Loading settings from wandb/settings
+2022-05-30 23:16:55,694 INFO    Thread-7 (_run_job):91691 [wandb_setup.py:_flush():75] Loading settings from environment variables: {'api_key': '***REDACTED***', 'entity': 'emilibonet', 'project': 'gar_itw', 'root_dir': '/home/emili/Documents/Universitat/TFG/cv-gender-age-recognition', 'run_id': '5mgwmc0f', 'sweep_param_path': '/home/emili/Documents/Universitat/TFG/cv-gender-age-recognition/wandb/sweep-0bg14jeo/config-5mgwmc0f.yaml', 'sweep_id': '0bg14jeo'}
+2022-05-30 23:16:55,694 INFO    Thread-7 (_run_job):91691 [wandb_setup.py:_flush():75] Inferring run settings from compute environment: {'program_relpath': 'code/models/ours/sweeper.py', 'program': '/home/emili/Documents/Universitat/TFG/cv-gender-age-recognition/code/models/ours/sweeper.py'}
+2022-05-30 23:16:55,695 INFO    Thread-7 (_run_job):91691 [wandb_init.py:_log_setup():437] Logging user logs to /home/emili/Documents/Universitat/TFG/cv-gender-age-recognition/wandb/run-20220530_231655-5mgwmc0f/logs/debug.log
+2022-05-30 23:16:55,695 INFO    Thread-7 (_run_job):91691 [wandb_init.py:_log_setup():438] Logging internal logs to /home/emili/Documents/Universitat/TFG/cv-gender-age-recognition/wandb/run-20220530_231655-5mgwmc0f/logs/debug-internal.log
+2022-05-30 23:16:55,695 INFO    Thread-7 (_run_job):91691 [wandb_init.py:init():471] calling init triggers
+2022-05-30 23:16:55,695 INFO    Thread-7 (_run_job):91691 [wandb_init.py:init():474] wandb.init called with sweep_config: {'batch_size': 14, 'dropout': 0.23417730203900528, 'lr': 0.0001, 'momentum': 0.8598382618623116}
+config: {}
+2022-05-30 23:16:55,695 INFO    Thread-7 (_run_job):91691 [wandb_init.py:init():524] starting backend
+2022-05-30 23:16:55,695 INFO    Thread-7 (_run_job):91691 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-05-30 23:16:55,698 INFO    Thread-7 (_run_job):91691 [backend.py:ensure_launched():217] starting backend process...
+2022-05-30 23:16:55,699 INFO    Thread-7 (_run_job):91691 [backend.py:ensure_launched():222] started backend process with pid: 91891
+2022-05-30 23:16:55,699 INFO    Thread-7 (_run_job):91691 [wandb_init.py:init():533] backend started and connected
+2022-05-30 23:16:55,703 INFO    Thread-7 (_run_job):91691 [wandb_run.py:_config_callback():1131] config_cb None None {'batch_size': 14, 'dropout': 0.23417730203900528, 'lr': 0.0001, 'momentum': 0.8598382618623116}
+2022-05-30 23:16:55,703 INFO    Thread-7 (_run_job):91691 [wandb_init.py:init():597] updated telemetry
+2022-05-30 23:16:55,706 INFO    Thread-7 (_run_job):91691 [wandb_init.py:init():628] communicating run to backend with 30 second timeout

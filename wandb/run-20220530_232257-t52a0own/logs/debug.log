@@ -1,0 +1,189 @@
+2022-05-30 23:22:57,671 INFO    Thread-13 (_run_job):93570 [wandb_setup.py:_flush():75] Loading settings from /home/emili/.config/wandb/settings
+2022-05-30 23:22:57,671 INFO    Thread-13 (_run_job):93570 [wandb_setup.py:_flush():75] Loading settings from wandb/settings
+2022-05-30 23:22:57,671 INFO    Thread-13 (_run_job):93570 [wandb_setup.py:_flush():75] Loading settings from environment variables: {'api_key': '***REDACTED***', 'entity': 'emilibonet', 'project': 'gar_itw', 'root_dir': '/home/emili/Documents/Universitat/TFG/cv-gender-age-recognition', 'run_id': 't52a0own', 'sweep_param_path': '/home/emili/Documents/Universitat/TFG/cv-gender-age-recognition/wandb/sweep-42x04o9x/config-t52a0own.yaml', 'sweep_id': '42x04o9x'}
+2022-05-30 23:22:57,672 INFO    Thread-13 (_run_job):93570 [wandb_setup.py:_flush():75] Inferring run settings from compute environment: {'program_relpath': 'code/models/ours/sweeper.py', 'program': '/home/emili/Documents/Universitat/TFG/cv-gender-age-recognition/code/models/ours/sweeper.py'}
+2022-05-30 23:22:57,672 INFO    Thread-13 (_run_job):93570 [wandb_init.py:_log_setup():437] Logging user logs to /home/emili/Documents/Universitat/TFG/cv-gender-age-recognition/wandb/run-20220530_232257-t52a0own/logs/debug.log
+2022-05-30 23:22:57,672 INFO    Thread-13 (_run_job):93570 [wandb_init.py:_log_setup():438] Logging internal logs to /home/emili/Documents/Universitat/TFG/cv-gender-age-recognition/wandb/run-20220530_232257-t52a0own/logs/debug-internal.log
+2022-05-30 23:22:57,672 INFO    Thread-13 (_run_job):93570 [wandb_init.py:init():471] calling init triggers
+2022-05-30 23:22:57,672 INFO    Thread-13 (_run_job):93570 [wandb_init.py:init():474] wandb.init called with sweep_config: {'batch_size': 14, 'dropout': 0.05407613907722264, 'lr': 0.01, 'momentum': 0.9412288892798611}
+config: {}
+2022-05-30 23:22:57,672 INFO    Thread-13 (_run_job):93570 [wandb_init.py:init():524] starting backend
+2022-05-30 23:22:57,672 INFO    Thread-13 (_run_job):93570 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-05-30 23:22:57,679 INFO    Thread-13 (_run_job):93570 [backend.py:ensure_launched():217] starting backend process...
+2022-05-30 23:22:57,680 INFO    Thread-13 (_run_job):93570 [backend.py:ensure_launched():222] started backend process with pid: 94298
+2022-05-30 23:22:57,681 INFO    Thread-13 (_run_job):93570 [wandb_init.py:init():533] backend started and connected
+2022-05-30 23:22:57,688 INFO    Thread-13 (_run_job):93570 [wandb_run.py:_config_callback():1131] config_cb None None {'batch_size': 14, 'dropout': 0.05407613907722264, 'lr': 0.01, 'momentum': 0.9412288892798611}
+2022-05-30 23:22:57,689 INFO    Thread-13 (_run_job):93570 [wandb_init.py:init():597] updated telemetry
+2022-05-30 23:22:57,694 INFO    Thread-13 (_run_job):93570 [wandb_init.py:init():628] communicating run to backend with 30 second timeout
+2022-05-30 23:22:59,564 INFO    Thread-13 (_run_job):93570 [wandb_run.py:_on_init():1923] communicating current version
+2022-05-30 23:22:59,984 INFO    Thread-13 (_run_job):93570 [wandb_run.py:_on_init():1927] got version response upgrade_message: "wandb version 0.12.17 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2022-05-30 23:22:59,985 INFO    Thread-13 (_run_job):93570 [wandb_init.py:init():659] starting run threads in backend
+2022-05-30 23:23:04,997 INFO    Thread-13 (_run_job):93570 [wandb_run.py:_console_start():1897] atexit reg
+2022-05-30 23:23:04,998 INFO    Thread-13 (_run_job):93570 [wandb_run.py:_redirect():1770] redirect: SettingsConsole.REDIRECT
+2022-05-30 23:23:04,998 INFO    Thread-13 (_run_job):93570 [wandb_run.py:_redirect():1775] Redirecting console.
+2022-05-30 23:23:04,999 ERROR   Thread-13 (_run_job):93570 [wandb_run.py:_redirect():1834] Failed to redirect.
+Traceback (most recent call last):
+  File "/home/emili/miniconda3/envs/viume/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1827, in _redirect
+    out_redir.install()
+  File "/home/emili/miniconda3/envs/viume/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 709, in install
+    _WSCH.add_fd(self._pipe_read_fd)
+  File "/home/emili/miniconda3/envs/viume/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 659, in add_fd
+    self._register()
+  File "/home/emili/miniconda3/envs/viume/lib/python3.10/site-packages/wandb/sdk/lib/redirect.py", line 644, in _register
+    old_handler = signal.signal(signal.SIGWINCH, lambda *_: None)
+  File "/home/emili/miniconda3/envs/viume/lib/python3.10/signal.py", line 56, in signal
+    handler = _signal.signal(_enum_to_int(signalnum), _enum_to_int(handler))
+ValueError: signal only works in main thread of the main interpreter
+2022-05-30 23:23:04,999 INFO    Thread-13 (_run_job):93570 [wandb_init.py:init():684] run started, returning control to user process
+2022-05-30 23:23:09,583 INFO    Thread-13 (_run_job):93570 [wandb_config.py:__setitem__():150] config set device = cpu - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x7f4bc49f9780>>
+2022-05-30 23:23:09,583 INFO    Thread-13 (_run_job):93570 [wandb_run.py:_config_callback():1131] config_cb device cpu None
+2022-05-30 23:23:10,253 INFO    Thread-13 (_run_job):93570 [wandb_config.py:__setitem__():150] config set epochs = 30 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x7f4bc49f9780>>
+2022-05-30 23:23:10,253 INFO    Thread-13 (_run_job):93570 [wandb_run.py:_config_callback():1131] config_cb epochs 30 None
+2022-05-30 23:23:36,345 INFO    Thread-13 (_run_job):93570 [wandb_run.py:_finish():1685] finishing run emilibonet/gar_itw/t52a0own
+2022-05-30 23:23:36,346 INFO    Thread-13 (_run_job):93570 [wandb_run.py:_atexit_cleanup():1866] got exitcode: 1
+2022-05-30 23:23:36,348 INFO    Thread-13 (_run_job):93570 [wandb_run.py:_restore():1838] restore
+2022-05-30 23:23:36,369 INFO    Thread-13 (_run_job):93570 [wandb_run.py:_on_finish():1995] got exit ret: file_counts {
+  wandb_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 940
+  total_bytes: 940
+}
+
+2022-05-30 23:23:36,928 INFO    Thread-13 (_run_job):93570 [wandb_run.py:_on_finish():1995] got exit ret: file_counts {
+  wandb_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 940
+  total_bytes: 940
+}
+
+2022-05-30 23:23:37,615 INFO    Thread-13 (_run_job):93570 [wandb_run.py:_on_finish():1995] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 940
+  total_bytes: 13632
+}
+
+2022-05-30 23:23:37,720 INFO    Thread-13 (_run_job):93570 [wandb_run.py:_on_finish():1995] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 940
+  total_bytes: 13632
+}
+
+2022-05-30 23:23:37,822 INFO    Thread-13 (_run_job):93570 [wandb_run.py:_on_finish():1995] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 940
+  total_bytes: 13632
+}
+
+2022-05-30 23:23:37,927 INFO    Thread-13 (_run_job):93570 [wandb_run.py:_on_finish():1995] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 940
+  total_bytes: 13632
+}
+
+2022-05-30 23:23:38,030 INFO    Thread-13 (_run_job):93570 [wandb_run.py:_on_finish():1995] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 940
+  total_bytes: 13632
+}
+
+2022-05-30 23:23:38,136 INFO    Thread-13 (_run_job):93570 [wandb_run.py:_on_finish():1995] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 940
+  total_bytes: 13632
+}
+
+2022-05-30 23:23:38,242 INFO    Thread-13 (_run_job):93570 [wandb_run.py:_on_finish():1995] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 940
+  total_bytes: 13632
+}
+
+2022-05-30 23:23:38,347 INFO    Thread-13 (_run_job):93570 [wandb_run.py:_on_finish():1995] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 13632
+  total_bytes: 13632
+}
+
+2022-05-30 23:23:38,453 INFO    Thread-13 (_run_job):93570 [wandb_run.py:_on_finish():1995] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 13632
+  total_bytes: 13632
+}
+
+2022-05-30 23:23:38,555 INFO    Thread-13 (_run_job):93570 [wandb_run.py:_on_finish():1995] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 13632
+  total_bytes: 13632
+}
+
+2022-05-30 23:23:38,660 INFO    Thread-13 (_run_job):93570 [wandb_run.py:_on_finish():1995] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 13632
+  total_bytes: 13632
+}
+
+2022-05-30 23:23:38,764 INFO    Thread-13 (_run_job):93570 [wandb_run.py:_on_finish():1995] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 13632
+  total_bytes: 13632
+}
+
+2022-05-30 23:23:38,869 INFO    Thread-13 (_run_job):93570 [wandb_run.py:_on_finish():1995] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 13632
+  total_bytes: 13632
+}
+
+2022-05-30 23:23:39,139 INFO    Thread-13 (_run_job):93570 [wandb_run.py:_on_finish():1995] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 13632
+  total_bytes: 13632
+}
+
+2022-05-30 23:23:40,150 INFO    Thread-13 (_run_job):93570 [wandb_run.py:_on_finish():1995] got exit ret: done: true
+exit_result {
+}
+file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 13632
+  total_bytes: 13632
+}
+local_info {
+}
+
+2022-05-30 23:23:42,121 INFO    Thread-13 (_run_job):93570 [wandb_run.py:_footer_history_summary_info():3102] rendering history
+2022-05-30 23:23:42,122 INFO    Thread-13 (_run_job):93570 [wandb_run.py:_footer_history_summary_info():3134] rendering summary
+2022-05-30 23:23:42,124 INFO    Thread-13 (_run_job):93570 [wandb_run.py:_footer_sync_info():3057] logging synced files
