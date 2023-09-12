@@ -15,7 +15,7 @@ Conda is used to set up the environment. In the main directory of this project, 
 conda env create -f conda_environment.yml
 ```
 
-After this installation, activate the `garenv` environment with the command
+After this installation, activate the `gerec` environment with the command
 
 ```
 conda activate gerec
